@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Rank</string>
+    <string name="textoTimes">Times</string>
+    <string name="textoTimesLista">Times Listagem</string>
+    <string name="textoTorneios">Torneios</string>
+    <string name="textoRanking">Ranking</string>
+    <string name="textoLancamentos">Lançamentos</string>
+    <string name="textoRank">Rank</string>
+    <string name="textoFechar">Fechar</string>
+    <string name="title_activity_torneios_lista">TorneiosLista</string>
+</resources>

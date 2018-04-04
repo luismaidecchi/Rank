@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cabecalhoLancamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="..:: Lancamentos ::.. " />
+
+    <Spinner
+        android:id="@+id/spinnerLancamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cabecalhoLancamentos" />
+
+    <TextView
+        android:id="@+id/textLancamentosRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerLancamentos"
+        android:text="Ranking:" />
+
+    <Spinner
+        android:id="@+id/spinnerLancamentosRanking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLancamentosRanking" />
+
+    <TextView
+        android:id="@+id/textLancamentosTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerLancamentosRanking"
+        android:text="Torneios:" />
+
+    <Spinner
+        android:id="@+id/spinnerLancamentosTorneios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLancamentosTorneios" />
+
+    <TextView
+        android:id="@+id/textLancamentosTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerLancamentosTorneios"
+        android:text="Times:" />
+
+    <Spinner
+        android:id="@+id/spinnerLancamentosTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLancamentosTimes" />
+
+    <TextView
+        android:id="@+id/textClassificacaoLancamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerLancamentosTimes"
+        android:text="Classificação:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupClassificacaoLancamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textClassificacaoLancamentos">
+
+        <RadioButton
+            android:id="@+id/radioButtonClassificacao1LugarLancamentos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1o. Lugar" />
+
+        <RadioButton
+            android:id="@+id/radioButtonClassificacao2LugarLancamentos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2o. Lugar" />
+
+        <RadioButton
+            android:id="@+id/radioButtonClassificacao3LugarLancamentos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="3o. Lugar" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textPontosLancamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupClassificacaoLancamentos"
+        android:text="Pontos:" />
+
+    <EditText
+        android:id="@+id/editPontosLancamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPontosLancamentos" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/TabelaBotoesCrudLancamentos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editPontosLancamentos">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/buttonInserirLancamentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editPontosLancamentos"
+                android:text="Inserir" />
+
+            <Button
+                android:id="@+id/buttonAlterarLancamentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonInserirLancamentos"
+                android:text="Alterar" />
+
+            <Button
+                android:id="@+id/buttonExcluirLancamentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonAlterarLancamentos"
+                android:text="Excluir" />
+
+            <Button
+                android:id="@+id/buttonListaLancamentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonExcluirLancamentos"
+                android:text="Lista" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/textRetornoLancamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+
+
+
+

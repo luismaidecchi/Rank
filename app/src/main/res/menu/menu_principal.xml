@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.luismaidecchi.rank.Principal">
+    <item
+        android:id="@+id/itemMenuTimes"
+        android:orderInCategory="100"
+        android:title="@string/textoTimes"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/itemMenuTorneios"
+        android:orderInCategory="120"
+        android:title="@string/textoTorneios"
+        app:showAsAction="never" >
+    </item>
+    <item
+        android:id="@+id/itemMenuRanking"
+        android:orderInCategory="130"
+        android:title="@string/textoRanking"
+        app:showAsAction="never" >
+    </item>
+    <item
+        android:id="@+id/itemMenuLancamentos"
+        android:orderInCategory="140"
+        android:title="@string/textoLancamentos"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itemMenuRank"
+        android:orderInCategory="150"
+        android:title="@string/textoRank"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itemMenuFechar"
+        android:orderInCategory="160"
+        android:title="@string/textoFechar"
+        app:showAsAction="never" />
+</menu>

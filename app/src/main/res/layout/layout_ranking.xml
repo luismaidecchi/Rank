@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cabecalhoRanking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="..:: Ranking ::.. " />
+
+    <Spinner
+        android:id="@+id/spinnerRanking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cabecalhoRanking"/>
+
+    <TextView
+        android:id="@+id/textDescricaoRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:layout_below="@id/spinnerRanking" />
+
+    <EditText
+        android:id="@+id/editDescricaoRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDescricaoRanking"/>
+
+    <TextView
+        android:id="@+id/textDataRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data:"
+        android:layout_below="@id/editDescricaoRanking"
+        />
+
+    <EditText
+        android:id="@+id/editDataRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDataRanking"/>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/TabelaBotoesCrudRanking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editDataRanking">
+        <TableRow>
+            <Button
+                android:id="@+id/buttonInserirRanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editDataRanking"
+                android:text="Inserir" />
+
+            <Button
+                android:id="@+id/buttonAlterarRanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonInserirRanking"
+                android:text="Alterar" />
+
+            <Button
+                android:id="@+id/buttonExcluirRanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonAlterarRanking"
+                android:text="Excluir" />
+            <Button
+                android:id="@+id/buttonListaRanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonExcluirRanking"
+                android:text="Lista" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textRetornoRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

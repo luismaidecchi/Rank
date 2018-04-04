@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/DescricaoTimes_Rank"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Pontos"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/PontosRank_Rank"
+        />
+</LinearLayout>

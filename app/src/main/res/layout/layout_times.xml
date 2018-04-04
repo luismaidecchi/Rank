@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cabecalhoTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="..:: Times ::.. " />
+
+    <Spinner
+        android:id="@+id/spinnerTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cabecalhoTimes"
+        />
+
+    <TextView
+        android:id="@+id/textDescricaoTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerTimes"
+        android:text="Descrição:" />
+
+    <EditText
+        android:id="@+id/editDescricaoTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDescricaoTimes" />
+
+    <TextView
+        android:id="@+id/textFundacaoTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editDescricaoTimes"
+        android:text="Fundação:" />
+
+    <EditText
+        android:id="@+id/editFundacaoTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textFundacaoTimes" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/TabelaBotoesCrudTimes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editFundacaoTimes">
+        <TableRow>
+            <Button
+                android:id="@+id/buttonInserirTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editFundacaoTimes"
+                android:text="Inserir" />
+
+            <Button
+                android:id="@+id/buttonAlterarTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonInserirTimes"
+                android:text="Alterar" />
+
+            <Button
+                android:id="@+id/buttonExcluirTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonAlterarTimes"
+                android:text="Excluir" />
+            <Button
+                android:id="@+id/buttonListaTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonExcluirTimes"
+                android:text="Lista" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textRetornoTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TabelaBotoesCrudTimes" />
+</RelativeLayout>

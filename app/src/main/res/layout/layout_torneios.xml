@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cabecalhoTorneios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="..:: Torneios ::.. " />
+
+    <Spinner
+        android:id="@+id/spinnerTorneios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cabecalhoTorneios"/>
+
+    <TextView
+        android:id="@+id/textDescricaoTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:layout_below="@id/spinnerTorneios" />
+
+    <EditText
+        android:id="@+id/editDescricaoTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDescricaoTorneios"/>
+
+    <TextView
+        android:id="@+id/textDataTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data:"
+        android:layout_below="@id/editDescricaoTorneios"/>
+
+    <EditText
+        android:id="@+id/editDataTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDataTorneios"/>
+
+    <TextView
+        android:id="@+id/textPontos1LugarTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1o. Lugar:"
+        android:layout_below="@id/editDataTorneios" />
+
+    <EditText
+        android:id="@+id/editPontos1LugarTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPontos1LugarTorneios" />
+
+    <TextView
+        android:id="@+id/textPontos2LugarTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2o. Lugar:"
+        android:layout_below="@id/editPontos1LugarTorneios" />
+
+    <EditText
+        android:id="@+id/editPontos2LugarTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPontos2LugarTorneios"/>
+
+    <TextView
+        android:id="@+id/textPontos3LugarTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3o. Lugar:"
+        android:layout_below="@id/editPontos2LugarTorneios"  />
+
+    <EditText
+        android:id="@+id/editPontos3LugarTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPontos3LugarTorneios"/>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/TabelaBotoesCrudTorneios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editPontos3LugarTorneios">
+        <TableRow>
+            <Button
+                android:id="@+id/buttonInserirTorneios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editPontos3LugarTorneios"
+                android:text="Inserir" />
+
+            <Button
+                android:id="@+id/buttonAlterarTorneios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonInserirTorneios"
+                android:text="Alterar" />
+
+            <Button
+                android:id="@+id/buttonExcluirTorneios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonAlterarTorneios"
+                android:text="Excluir" />
+            <Button
+                android:id="@+id/buttonListaTorneios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/buttonExcluirTorneios"
+                android:text="Lista" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/textRetornoTorneios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

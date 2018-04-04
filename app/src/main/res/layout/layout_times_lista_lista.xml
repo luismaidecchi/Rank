@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/DescricaoTimes_Times"
+    />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Descrição"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/_id_Times_Times"
+    />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Fundação"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/FundacaoTimes_Times"
+        />
+</LinearLayout>

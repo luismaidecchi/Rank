@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Descrição"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/DescricaoTorneios_Torneios"
+    />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/_id_Torneios_Torneios"
+    />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/DataTorneios_Torneios"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="1o. Lugar"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/Pontos1Lugar_Torneios"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="2o. Lugar"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/Pontos2Lugar_Torneios"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="3o. Lugar"
+        android:layout_gravity="right"
+        android:background="#3f41ff"
+        android:id="@+id/Pontos3Lugar_Torneios"
+        />
+</LinearLayout>
