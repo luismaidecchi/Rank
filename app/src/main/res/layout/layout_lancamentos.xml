@@ -25,14 +25,17 @@
 
     <Spinner
         android:id="@+id/spinnerLancamentosRanking"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textLancamentosRanking" />
+        android:textSize="100sp"
+        android:layout_below="@id/textLancamentosRanking"
+        android:background="@android:color/holo_orange_dark" />
 
     <TextView
-        android:id="@+id/textLancamentosTorneios"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/textLancamentosTorneios"
         android:layout_below="@id/spinnerLancamentosRanking"
         android:text="Torneios:" />
 
